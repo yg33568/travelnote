@@ -11,10 +11,10 @@
 Java	           17	        后端核心语言
 Spring Boot  	   2.3.12  	  应用快速开发框架
 MyBatis-Plus	   3.4.3    	ORM增强工具
-MySQL            8.0	      关系型数据存储
+MySQL             8.0	      关系型数据存储
 Redis	           6.x        缓存、分布式锁、Session共享
 Redisson	       3.13.6	    分布式锁实现
-Hutool           5.7.17	    Java工具类库
+Hutool            5.7.17	    Java工具类库
 ```
 
 ✨ 核心功能
@@ -57,15 +57,15 @@ travelnote/
 │   ├── mapper/          # MyBatis Plus 数据访问层
 │   ├── dto/             # 实体类
 │   ├── utils/           # 工具类（Redis、分布式锁、验证码等）
-│   ├── entity/          # 
-│   ├── interceptor/     #
-│   ├── listener/        # 
+│   ├── entity/          # 数据库实体类（User、Shop、Blog、Voucher等）
+│   ├── interceptor/     # 登录拦截器、权限拦截器
+│   ├── listener/        # 事件监听器（如Redis Key过期监听）
 │   └── TravelNoteApplication.java  # 项目启动类
 ├── src/main/resources/
 │   ├── mapper/          # MyBatis XML文件
-│   ├── db/              #
-│   ├── seckill.lua      # 
-│   ├── unLock.lua       # 
+│   ├── db/              # 数据库初始化脚本
+│   ├── seckill.lua      # 秒杀扣库存 Lua 脚本（保证原子性）
+│   ├── unLock.lua       # 分布式锁解锁 Lua 脚本
 │   └── application.yml  # 项目配置文件
 ├── pom.xml              # Maven 依赖配置
 └── README.md            # 项目说明文档
