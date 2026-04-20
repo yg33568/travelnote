@@ -22,12 +22,7 @@ public class SeckillVoucherListener {
     SeckillVoucherServiceImpl seckillVoucherService;
     @Resource
     VoucherOrderServiceImpl voucherOrderService;
-    /**
-     * sheng  消费者1
-     * @param message
-     * @param channel
-     * @throws Exception
-     */
+
     @RabbitListener(queues = "QA")
     public void receivedA(Message message, Channel channel)throws Exception{
         String msg=new String(message.getBody());

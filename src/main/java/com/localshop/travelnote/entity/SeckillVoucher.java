@@ -11,19 +11,13 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
- * <p>
  * 秒杀优惠券表，与优惠券是一对一关系
- * </p>
- *
- * @author 虎哥
- * @since 2022-01-04
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @TableName("tb_seckill_voucher")
 public class SeckillVoucher implements Serializable {
-
     private static final long serialVersionUID = 1L;
 
     /**
@@ -56,6 +50,4 @@ public class SeckillVoucher implements Serializable {
      * 更新时间
      */
     private LocalDateTime updateTime;
-
-
 }

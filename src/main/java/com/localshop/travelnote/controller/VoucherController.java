@@ -1,6 +1,5 @@
 package com.localshop.travelnote.controller;
 
-
 import com.localshop.travelnote.dto.Result;
 import com.localshop.travelnote.entity.Voucher;
 import com.localshop.travelnote.service.IVoucherService;
@@ -8,14 +7,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
-/**
- * <p>
- *  前端控制器
- * </p>
- *
- * @author 虎哥
- * @since 2021-12-22
- */
 @RestController
 @RequestMapping("/voucher")
 public class VoucherController {

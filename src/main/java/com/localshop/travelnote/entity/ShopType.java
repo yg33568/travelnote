@@ -11,14 +11,6 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
-/**
- * <p>
- * 
- * </p>
- *
- * @author 虎哥
- * @since 2021-12-22
- */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
@@ -26,7 +18,6 @@ import java.time.LocalDateTime;
 public class ShopType implements Serializable {
 
     private static final long serialVersionUID = 1L;
-
     /**
      * 主键
      */
@@ -59,6 +50,5 @@ public class ShopType implements Serializable {
      */
     @JsonIgnore
     private LocalDateTime updateTime;
-
 
 }

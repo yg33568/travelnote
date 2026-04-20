@@ -50,7 +50,6 @@ public class ShopController {
     @PutMapping
     public Result updateShop(@RequestBody Shop shop) {
         // 写入数据库
-
         return shopService.update(shop);
     }
 

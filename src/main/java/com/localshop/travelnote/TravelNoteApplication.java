@@ -9,7 +9,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @MapperScan("com.localshop.travelnote.mapper")
 @SpringBootApplication
 public class TravelNoteApplication {
-    //
+
     public static void main(String[] args) {
         SpringApplication.run(TravelNoteApplication.class, args);
     }

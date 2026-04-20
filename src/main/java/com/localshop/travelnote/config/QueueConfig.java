@@ -22,7 +22,7 @@ public class QueueConfig {
      * 声明x交换机
      * @return
      */
-    @Bean("xExchange")//别名和方法名取一样
+    @Bean("xExchange")
     public DirectExchange xExchange(){
         return new DirectExchange(X_EXCHANGE);
     }
@@ -31,7 +31,7 @@ public class QueueConfig {
      * 声明y交换机
      * @return
      */
-    @Bean("yExchange")//别名和方法名取一样
+    @Bean("yExchange")
     public DirectExchange yExchange(){
         return new DirectExchange(Y_DEAD_LETTER_EXCHANGE);
     }
@@ -88,7 +88,5 @@ public class QueueConfig {
     ){
         return BindingBuilder.bind(queueD).to(yExchange).with("YD");
     }
-
-
 }
 
